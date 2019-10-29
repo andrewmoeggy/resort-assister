@@ -9,7 +9,11 @@ class FeaturedRooms extends Component {
     const { featuredRooms: rooms } = this.context;
     console.log(rooms)
     return (
-      <div></div>
+      <div>
+        {rooms.map(room => {
+          return <h1 style={{ color: 'black' }}>{room.name}</h1>
+        })}
+      </div>
     );
   }
 }
