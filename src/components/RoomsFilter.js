@@ -47,6 +47,7 @@ const RoomFilter = ({ rooms }) => {
         {/* {Guest } */}
         <div className="form-group">
           <label htmlFor="capacity">Guests</label>
+          <h6>search number of guests</h6>
           <select
             name='capacity'
             id="capacity"
