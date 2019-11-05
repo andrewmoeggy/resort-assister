@@ -10,13 +10,16 @@ const RoomList = ({ rooms }) => {
     )
   } else {
     return (
-      <section className="roomsList">
-        <div className="roomslist-center">
-          {rooms.map((room, i) => {
-            return <Room key={room.id} room={room} />
-          })}
-        </div>
-      </section>
+      <>
+        <section className="roomsList">
+          <div className="roomslist-center">
+            {rooms.map((room, i) => {
+              return <Room key={room.id} room={room} />
+            })}
+          </div>
+        </section>
+        <footer style={{ padding: '40px' }}></footer>
+      </>
     );
   }
 }
