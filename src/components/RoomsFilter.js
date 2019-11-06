@@ -47,7 +47,6 @@ const RoomFilter = ({ rooms }) => {
         {/* {Guest } */}
         <div className="form-group">
           <label htmlFor="capacity">Guests</label>
-          <h6>search number of guests</h6>
           <select
             name='capacity'
             id="capacity"
@@ -58,6 +57,22 @@ const RoomFilter = ({ rooms }) => {
           </select>
         </div>
         {/* { end select type} */}
+        {/* {ROom Price} */}
+        <div className="form-group">
+          <label htmlFor="price">
+            room price${price}
+          </label>
+          <input
+            type="range"
+            name='price'
+            min={minPrice}
+            max={maxPrice}
+            id='price'
+            value={price}
+            onChange={handleChange}
+            className='form-control'
+          />
+        </div>
       </form>
     </section>
   );
