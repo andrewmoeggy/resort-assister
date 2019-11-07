@@ -5,7 +5,7 @@ const RoomList = ({ rooms }) => {
   if (rooms.length === 0) {
     return (
       <div className="empty-search">
-        <h3>Unfortunately no rooms match your search parameters</h3>
+        <h3>No Rooms Found</h3>
       </div>
     )
   } else {
